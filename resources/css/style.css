@@ -1,0 +1,187 @@
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+:root{
+  --grey-color: #6d838f;
+  --tomato-color: #e94c1f;
+}
+
+li{
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: var(--grey-color);
+}
+
+li:hover{
+  transform: scale(1.2);
+}
+
+a:hover{
+  color:var(--tomato-color);
+}
+
+/* artwork */
+.imageContainer{
+  height: 90vh;
+  width: 45%;
+}
+
+img{
+  border: 2px solid black;
+  width: 100%;
+  height: 100%;
+}
+
+.text-group{
+  font-weight: 500;
+}
+
+.padding-text{
+  padding-left: 40px;
+}
+
+.interventions{
+  font-size: 15px;
+  color: #908f8f;
+}
+
+.author{
+  color:#e94c1f;
+  text-transform: capitalize;
+}
+
+.circleGreen {
+  width: 15px;
+  height: 15px;
+  background-color: #fcd268;
+  border-radius: 150px;
+}
+
+.circleRed {
+  width: 15px;
+  height: 15px;
+  background-color: #38bc3f;
+  border-radius: 150px;
+}
+
+.reserved{
+  font-size: small;
+}
+.group-btn{
+  display: flex;
+}
+
+.btn-pen{
+  width: 45px;
+  height:45px;
+}
+
+.btn-export{
+  display: flex;
+  align-items: center;
+  border-radius: 0;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  background-color: #e94c1f;
+  padding-right: 22px;
+  padding-left: 22px;
+  height: 45px;
+}
+
+.btn-send{
+  display: flex;
+  align-items: center;
+  background-color: #000000;
+  padding-right: 18px;
+  padding-left: 18px;
+  height: 45px;
+}
+
+/* form */
+.form{
+  font-size: 18px;
+}
+
+.label{
+  color: var(--grey-color);
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.asterisk{
+  color: red;
+}
+
+.select{
+  margin-bottom: 0.9rem;
+  display: block;
+  width: 50%;
+  padding-bottom: 0.5rem;
+  border: 0;
+  border-bottom: 3px solid black;
+  font-weight: 400;
+}
+
+.language{
+  width: 47%;
+}
+
+@media (max-width: 768px) {
+  .form{
+    font-size: 10px;
+  }
+
+  .select {
+    width: 90%;
+  }
+
+  .language{
+    width: 90%;
+  }
+}
+
+.help{
+  color: var(--tomato-color);
+  font-size: 16px;
+  margin-left: 18px;
+}
+
+.info{
+  color: #000000;
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+.ownership{
+  margin-left: 60px;
+  width: 40%;
+  color: var(--grey-color);
+}
+
+.details-input-dimensions{
+  font-size: 13px;
+}
+
+.add-dimensions{
+  height: 48px;
+  width: 208px;
+}
+
+.check-relative{
+  position: relative;
+  bottom: 0px;
+}
+.check-dimensions{
+  position: absolute;
+  top: 10px; left: 235px;
+  font-size: 14px;
+}
+
+.border-check{
+  border: 2px solid black !important;
+}

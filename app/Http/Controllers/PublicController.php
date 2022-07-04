@@ -10,4 +10,16 @@ class PublicController extends Controller
     {
         return view('welcome');
     }
+
+    public function artwork(){
+        return view('artwork');
+    }
+
+    public function store(){
+        return view('form-create');
+    }
+
+    public function edit(){
+        return view('edit');
+    }
 }
