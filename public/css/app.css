@@ -124,6 +124,7 @@ img{
   color: var(--grey-color);
   display: block;
   margin-bottom: 1.5rem;
+  font-size: 18px;
 }
 
 .asterisk{
@@ -182,6 +183,7 @@ img{
 
 .add-dimensions{
   height: 48px;
+  min-width: 100px;
   width: 208px;
 }
 
@@ -199,4 +201,128 @@ img{
   border: 2px solid black !important;
 }
 
+.group-input{
+  width: 85%;
+}
+
+.dimensions-input{
+  border: 0;
+  border-bottom: 3px solid black;
+  margin-right: 15px;
+  padding-bottom: 10px;
+  min-width: 20px;
+  max-width: 12%;
+}
+
+.select-units{
+  border: 0;
+  border-bottom: 3px solid black;
+  margin-right: 15px;
+  padding-bottom: 12px;
+  width: 10%;
+}
+
+.input-category{
+  border: 0;
+  border-bottom: 3px solid black;
+  padding-bottom: 10px;
+  margin-right: 10px;
+}
+
+.x-icon{
+  color: #e00942;
+  font-size: 20px;
+}
+
+.duration-video{
+  margin-top: 30vh;
+}
+
+.video-input{
+  border: 0;
+  border-bottom: 3px solid black;
+  margin-right: 15px;
+  padding-bottom: 10px;
+  min-width: 20px;
+  max-width: 12%;
+}
+
+.weight-input{
+  border: 0;
+  border-bottom: 3px solid black;
+  margin-right: 15px;
+  padding-bottom: 10px;
+  width:52%;
+}
+
+.editions{
+  margin-bottom: 0.9rem;
+  display: block;
+  width: 25%;
+  padding-bottom: 0.5rem;
+  border: 0;
+  border-bottom: 3px solid black;
+  font-weight: 400;
+}
+
+.unique-editions{
+  margin-top: 2rem;
+  position: relative;
+  bottom: 0px;
+}
+
+.unique-dimensions{
+  position: absolute;
+  top: 5px; left: 245px;
+  font-size: 14px;
+}
+
+.config-edition{
+  position: absolute;
+  top: -10px; left: 410px;
+  font-size: 17px;
+  font-weight: 500;
+  height: 48px;
+  width: 180px;
+}
+
+.details-editions{
+  position: absolute;
+  top: -10px; left: 380px;
+  font-size: 12px;
+  width: 200px;
+  color: var(--grey-color);
+}
+
+.price-check{
+  position: relative;
+  top: 30px; left: 270px;
+}
+
+.no-price{
+  position: absolute;
+  bottom: 26px; left: -210px;
+  font-size: 14px;
+}
+
+.price-input{
+  border: 0;
+  border-bottom: 3px solid black;
+  margin-right: 15px;
+  padding-bottom: 10px;
+  min-width: 20px;
+  max-width: 20%;
+}
+
+.artist-amount{
+  margin-top: 200px;
+}
+
+.percent-select{
+  border: 0;
+  border-bottom: 3px solid black;
+  margin-right: 15px;
+  padding-bottom: 12px;
+  width: 27.6%;
+}
 
