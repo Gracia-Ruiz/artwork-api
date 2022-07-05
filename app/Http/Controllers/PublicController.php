@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Artwork;
 use Illuminate\Http\Request;
 
 class PublicController extends Controller
@@ -19,7 +20,9 @@ class PublicController extends Controller
         return view('form-create');
     }
 
-    public function edit(){
-        return view('edit');
+    public function edit($id){
+
+        $artworks = Artwork::findOrFail($id);
+        return view('edit',compact('artworks'));
     }
 }

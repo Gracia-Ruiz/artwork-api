@@ -21,8 +21,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 /* api crud routes */
 Route::get('/index', [ArtworkController::class, 'index']);
-Route::post('/store', [ArtworkController::class, 'store']);
-Route::patch('/edit/{id}', [ArtworkController::class, 'edit']);
+Route::post('/store', [ArtworkController::class, 'store'])->name('store');
+Route::patch('/edit/{id}', [ArtworkController::class, 'edit'])->name('edit');
 Route::post('/update/{id}', [ArtworkController::class, 'update']);
 Route::delete('/destroy/{id}', [ArtworkController::class, 'destroy']);
 

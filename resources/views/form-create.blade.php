@@ -1,12 +1,13 @@
 @extends('layouts.app')
 @section('content')
-<main class="container-fluid mt-5">
+<main class="container mt-5">
   <header class="row">
     <section class="col-12 my-5 mx-auto">
       <h1>Create artwork</h1>
     </section>
     <section>
-      <form method="#" action="#" class="row my-4 form" enctype="multipart/form-data" onsubmit="return validation()">
+      <form method="POST" action="{{ route('store') }}" class="row my-4 form" enctype="multipart/form-data" onsubmit="return validation()">
+        @csrf
         {{--  primera columna --}}
         <div class="col-2 pe-0">
           <label for="language" class="label">Language<span class="asterisk">*</span></label> 
@@ -37,8 +38,8 @@
           <label for="notes" class="mt-4 label">Notes</label>
           <label for="documentation-notes" class="mt-4 label">Documentation<span class="info">&#128712;</span><br>notes</label>
           <label for="pdf-notes" class="mt-4 label">PDF notes<span class="info">&#128712;</span></label>
-          
         </div> 
+        
         {{--  segunda columna --}}
         <div class="col-10 pe-0">
           <select name="Language" id="#" class="ps-2 select language d-inline">
@@ -47,15 +48,15 @@
             <option value="3">Italiano</option>
           </select>
           <span class="d-none d-md-inline help">Help</span>
-          <input type="text" class="select" required> 
-          <input type="text" class="select" required>
-          <select name="artist" id="#" class="select">
+          <input type="text" class="select" name="title" required> 
+          <input type="text" class="select">
+          <select id="#" class="select" name="author" required>
             <option value="1">Adam Birkett</option>
             <option value="2">Jon Doe</option>
             <option value="3">Maria la Portuguesa</option>
           </select>
-          <input type="text" class="ps-2 select" required>
-          <input type="text" class="ps-2 select" required>
+          <input type="text" class="ps-2 select" name="age" required>
+          <input type="text" class="ps-2 select" name="stockNumber" required>
           <select name="status" id="#" class="ps-2 select">
             <option value="1">Reserved</option>
             <option value="2">Available</option>
@@ -78,7 +79,7 @@
             </div>
           </div>
           <div class="mt-5 group-input">
-            <input type="number" class="dimensions-input">
+            <input type="number" class="dimensions-input" name="size" required>
             <input type="number" class="dimensions-input">
             <input type="number" class="dimensions-input">
             <select name="units" id="#" class="select-units">
@@ -164,7 +165,12 @@
           <input type="text" class="ps-2 select mt-2" required>
           <input type="text" class="ps-2 select mt-2" required>
           <input type="text" class="ps-2 select mt-2" required>
-        </div>  
+          <input type="text" class="ps-2 select mt-2" required>
+        </div> 
+        <div class="mt-3 group-btn">
+          <button type="submit" class="text-white btn-save">Save</button>
+          <button class="btn-cancel">Cancel</button> 
+        </div>
       </form>
     </section>
   </header>

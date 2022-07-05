@@ -17,5 +17,5 @@ use App\Http\Controllers\PublicController;
 Route::get('/', [PublicController::class, 'index'])->name('welcome');
 Route::get('/artwork', [PublicController::class, 'artwork'])->name('artwork');
 Route::get('/form-create', [PublicController::class, 'store'])->name('store-view');
-Route::get('/edit', [PublicController::class, 'edit'])->name('edit-view');
+Route::get('/{id}/edit', [PublicController::class, 'edit'])->name('edit-view');
 
